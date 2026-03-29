@@ -5,7 +5,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 // Add SQL Server container
 var sqlServer = builder.AddSqlServer("sqlserver")
   .WithLifetime(ContainerLifetime.Persistent);
-
+  
 // Add the database
 var cleanArchDb = sqlServer.AddDatabase("cleanarchitecture");
 
